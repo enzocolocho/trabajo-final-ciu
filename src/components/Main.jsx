@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useTransition } from 'react';
+import React, { useState, useEffect } from 'react';
 import Personaje from './Personaje';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -61,42 +61,37 @@ const Main = () => {
 
     //Hook para consultar la API cuando se termine de actualizar el useState del url del personaje
     useEffect(() => {
+
+        const consultarAPIDragonBall = async () => {
+            try {
+                const res = await fetch(urlPersonaje);
+                if (res.ok) {
+                    const personaje = await res.json();
+                    if (personaje.name === "Unknown character") {
+                        alert("Nombre de personaje no válido.");
+                    } else {
+                        editarPersonaje(personaje);
+
+                        editarNombre(personaje.name);
+                        editarImagen(personaje.pic);
+                        editarRaza(personaje.race);
+                        editarDescripcion(personaje.about);
+                        editarAltura(personaje.height);
+                        editarPeso(personaje.weight);
+                    }
+                } else {
+                    throw new Error('Error en la solicitud');
+                }
+            } catch(error){
+                alert(error);
+            }
+        }
+
         if (urlPersonaje) {
             consultarAPIDragonBall();
         }
     }, [urlPersonaje]);
 
-
-    //Función para consultar la API
-    const consultarAPIDragonBall = async () => {
-
-        fetch(urlPersonaje)
-            .then(res => {
-                if (res.ok) {
-                    return res.json();
-                } else {
-                    throw new Error('Error en la solicitud');
-                }
-            })
-            .then(personaje => {
-
-                if (personaje.name === "Unknown character") {
-                    alert("Nombre de personaje no válido");
-                } else {
-                    editarPersonaje(personaje);
-
-                    editarNombre(personaje.name);
-                    editarImagen(personaje.pic);
-                    editarRaza(personaje.race);
-                    editarDescripcion(personaje.about);
-                    editarAltura(personaje.height);
-                    editarPeso(personaje.weight);
-                }
-            })
-            .catch((error) => {
-                alert(error);
-            })
-    }
 
     return (
         <div className='main'>
