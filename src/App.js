@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import Inicio from './components/Inicio';
-import { useState, useTransition } from 'react';
+import { useEffect, useState, useTransition } from 'react';
 
 function App() {
 
