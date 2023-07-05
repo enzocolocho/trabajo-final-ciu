@@ -26,9 +26,8 @@
 
 .logo h1 {
     padding-left: 5%;
-    font-size: calc(18px + 1vw);    
-    font-family: 'Ysabeau SC', sans-serif;
-    font-weight: 900;
+    font-size: calc(18px + 1vw);
+    font-family: 'Indie Flower', cursive;
 }
 
 /* MENU */
@@ -38,7 +37,7 @@
     align-items: center;
     display: flex;
     justify-content: space-around;
-    
+
 }
 
 .menu div {
@@ -54,6 +53,7 @@
     font-size: calc(14px + 0.5vw);
     color: black;
     font-weight: 800;
+    font-family: 'Indie Flower', cursive;
 }
 
 .menu div:hover {
@@ -65,6 +65,7 @@
 
 /* RESPONSIVE */
 
+/* Celulares */
 @media only screen and (max-width:767px) {
     .header {
         height: 20vw;
@@ -96,7 +97,9 @@
     }
 }
 
-@media only screen and (min-width:768px) and (max-width:1023px) {
+
+/* Tablets */
+@media only screen and (min-width:768px) and (max-width:1024px) {
     .header {
         height: 10vw;
     }
@@ -115,5 +118,12 @@
 
     .menu {
         width: 70%;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+    .header {
+        height: 10vh;
     }
 }

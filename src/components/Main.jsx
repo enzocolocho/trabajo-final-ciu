@@ -8,8 +8,11 @@ const Main = () => {
 
     /**
      * -- INFO API --
+     * 
      * LINK: https://unofficialdbzapi.cyclic.app/api/
+     * 
      * GITHUB: https://github.com/RyanShort13110/dbz-api
+     * 
      * SITIO WEB: https://unofficialdbzapi.cyclic.app
      */
 
@@ -40,10 +43,9 @@ const Main = () => {
     const [nombreABuscar, editarNombreABuscar] = useState("");
 
 
-    //HANDLECHANGE
+    //HANDLECHANGE y SUBMITFORM
     const handleChange = (e) => {
         const valor = e.target.value;
-        console.log("valor actualizado: " + valor);
         editarNombreABuscar(valor);
     };
 
@@ -128,12 +130,12 @@ const Main = () => {
                         altura={height}
                         peso={weight}
                     />
-                )}       
+                )}
             </div>
             <div className="about-me">
                 <h4 id='main-about-me'>About me</h4>
                 <p>¡Hola guerrero Z! Me llamo Enzo Colocho y, al igual que vos,
-                    soy un fanático de Dragon Ball. También soy estudiante de la
+                    soy un fanático de <b>Dragon Ball</b>. También soy estudiante de la
                     tecnicatura en programación de la Universidad Nacional de
                     Hurlingham, tan sólo me quedan 2 materias para recibirme.
                     Soy fanático de Dragon Ball desde que tengo memoria, tengo miles

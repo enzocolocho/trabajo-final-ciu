@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import '../inicio.css';
 
-const Inicio = ({guardarUsuario}) => {
+const Inicio = ({ guardarUsuario }) => {
 
     //Hook para el username
     const [username, editarUsername] = useState('');

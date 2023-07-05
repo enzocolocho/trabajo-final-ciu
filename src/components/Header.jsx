@@ -1,9 +1,7 @@
 import React from 'react';
 import '../header.css';
 import logo from '../imagenes/logo-frikis.png';
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@800;900&display=swap');
-</style>
+
 
 const Header = () => {
     return (
@@ -19,7 +17,9 @@ const Header = () => {
                 <div className="about-me">
                     <a href="#main-about-me">About me</a>
                 </div>
-                
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+                </style>
             </div>
         </div>
     );

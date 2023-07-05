@@ -7,7 +7,7 @@ const Personaje = ({ imagen, nombre, raza, descripcion, altura, peso }) => {
     return (
         <div className='main-personaje'>
             <Card className='personaje-card'>
-                <Card.Img className='imagen-card' variant='top' src={imagen} />
+                <Card.Img className='imagen-card "d-flex justify-content-center"' variant='top' src={imagen} />
                 <Card.Body className='cuerpo-card'>
 
                     <div className="nombre">

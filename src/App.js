@@ -34,7 +34,7 @@ function App() {
       {
         mostrarInicio
           ?
-          <Inicio guardarUsuario = {guardarUsuario} />          
+          <Inicio guardarUsuario={guardarUsuario} />
           :
           <Main />
       }

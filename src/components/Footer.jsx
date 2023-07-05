@@ -13,7 +13,7 @@ const Footer = () => {
                 <p>enzo.colocho.99@gmail.com</p>
             </div>
             <div className="gohan">
-                <img src={gohan} alt="gohan" width="auto" height="150px"/>
+                <img src={gohan} alt="gohan" width="auto" height="150px" />
             </div>
             <div className="redes">
                 <div className="instagram">
