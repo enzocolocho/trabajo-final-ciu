@@ -1,0 +1,66 @@
+.main-personaje{
+    display: grid;
+    width: 100%;
+    height: 60vw;
+    align-items: center;
+    margin-bottom: 15vh;
+}
+
+.personaje-card{
+    display: grid;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    background-color: rgb(77, 77, 77);
+    border-radius: 40px;
+    padding: 2vw 0;
+}
+
+.imagen-card{
+    display: flex;
+    height: 500px;
+    margin-left: 38%;
+    padding-bottom: 2vw;
+}
+
+.descripcion-card{
+    padding: 0 5vw;
+    font-size: calc(12px + 0.5vw);
+    text-align: center;
+}
+
+.texto-descripcion{
+    text-decoration: underline;
+}
+
+.cuerpo-card div{
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 2px rgb(212, 212, 212);
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width:767px) {
+    .main-personaje{
+        height: 120vh;
+        padding-top: 10vh;
+    }
+
+    .imagen-card{
+        height: 25vh;
+        margin-left: 15vw;
+    }
+    
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .main-personaje{
+        height: 120vh;
+        padding-top: 10vh;
+    }
+
+    .imagen-card{
+        height: 40vh;
+        margin-left: 20vw;
+    }
+}

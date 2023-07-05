@@ -1,0 +1,236 @@
+.main {
+    min-height: 120vh;
+    display: grid;
+}
+
+/* BIENVENIDA */
+.bienvenida {
+    background-image: url(imagenes/fondo-db.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bienvenida h3 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 5vw;
+    width: 30vw;
+    justify-content: center;
+    font-size: calc(18px + 1vw);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+}
+
+/* PERSONAJES */
+.main-personajes {
+    display: grid;
+    width: 100%;
+}
+
+.formulario {
+    display: flex;
+    height: 10vw;
+}
+
+.titulo {
+    font-size: calc(18px + 0.5vw);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 60%;
+    border-right: solid 2px rgb(212, 212, 212);
+    margin-top: 2%;
+    margin-right: 5vw;
+    padding: 0 4vw;
+}
+
+#busqueda {
+    display: flex;
+    text-align: center;
+    height: 30%;
+    width: 50vw;
+    border-radius: 30px;
+    margin-top: 3%;
+    margin-right: 2vw;
+    font-size: calc(12px + 0.5vw);
+    background-color: rgb(212, 212, 212);
+    border: none;
+}
+
+.boton {
+    width: 20%;
+    height: 30%;
+    border-radius: 30px;
+    font-size: calc(16px + 0.2vw);
+    margin-top: 3%;
+    background-color: rgb(212, 212, 212);
+    border: none;
+}
+
+.boton:hover {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    transition: all ease 200ms;
+}
+
+.personajes-formulario {
+    display: grid;
+}
+
+/* ABOUT ME */
+.about-me {
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.about-me h4 {
+    font-size: calc(18px + 0.5vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    border-right: solid 2px rgb(212, 212, 212);
+}
+
+.about-me p {
+    padding: 0 5vw;
+    text-align: center;
+    font-size: calc(12px + 0.5vw);
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width:767px) {
+    .main {
+        min-height: 120vh;
+        display: grid;
+    }
+
+    .bienvenida {
+        height: 50vh;
+    }
+
+    .bienvenida h3 {
+        width: 80vw;
+        height: 10vw;
+    }
+
+    .formulario {
+        display: grid;
+        height: 25vh;
+        width: 100%;
+    }
+
+    .main-personajes {
+        min-height: 30vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5vh;
+    }
+
+    .main-personajes h4 {
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        border: none;
+    }
+
+    #busqueda {
+        margin: 0 5vw;
+        padding: 0;
+        width: 90vw;
+        height: 4vh;
+    }
+
+    .boton{
+        margin-left: 20%;
+        width: 60%;
+        height: 4vh;
+    }
+
+    .about-me {
+        height: 60vh;
+        display: grid;
+    }
+
+    .about-me h4 {
+        border: none;
+    }
+
+    .about-me p {
+        padding: 0 10vw;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .main {
+        min-height: 120vh;
+        display: grid;
+    }
+
+    .bienvenida h3 {
+        width: 45vw;
+        height: 10vw;
+    }
+
+    .formulario {
+        height: 20vh;
+        width: 100%;
+    }
+
+    .main-personajes {
+        min-height: 30vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5vh;  
+    }
+
+    .titulo{
+        border-right: solid 2px rgb(212, 212, 212);
+        height: 70%;
+        width: 20vw;
+    }
+
+    .main-personajes h4 {
+        display: flex;
+        border: none;
+    }
+
+    #busqueda {
+        margin-top: 6vh;
+        padding: 0;
+        width: 50vw;
+        height: 5vh;
+    }
+
+    .boton{
+        margin-top: 6vh;
+        width: 20%;
+        height: 5vh;
+    }
+
+    .about-me {
+        height: 50vw;
+        display: grid;
+    }
+
+    .about-me h4 {
+        border: none;
+    }
+
+    .about-me p {
+        padding: 0 10vw;
+    }
+}

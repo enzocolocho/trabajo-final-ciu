@@ -1,0 +1,95 @@
+.footer {
+    background-color: rgb(77, 77, 77);
+    height: 8vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer div {
+    width: 33%;
+}
+
+/* CONTACTO */
+.contacto {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(212, 212, 212);
+    border-radius: 0 30px 30px 0;
+}
+
+.contacto p {
+    color: black;
+    padding-left: 5vw;
+    font-size: calc(14px + 0.3vw);
+    font-weight: 600;
+}
+
+/* GOHAN */
+.gohan {
+    display: flex;
+    justify-content: end;
+}
+
+/* REDES */
+.redes {
+    display: grid;
+    align-items: center;
+    justify-content: end;
+}
+
+.redes div {
+    height: 80%;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(212, 212, 212);
+    border-radius: 30px 0 0 30px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width:767px) {
+    .footer {
+        height: 35vw;
+        display: flex;
+    }
+
+    .footer div {
+        width: 50%;
+    }
+
+    .contacto {
+        background-color: rgb(77, 77, 77);
+    }
+
+    .redes {
+        width: 30%;
+    }
+
+    .redes div {
+        width: 20vw;
+    }
+
+    .gohan {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .footer {
+        height: 20vw;
+    }
+
+    .footer div {
+        width: 50%;
+    }
+
+    .gohan {
+        display: none;
+    }
+
+    .redes div {
+        width: 10vw;
+    }
+}
