@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import Inicio from './components/Inicio';
-import { useEffect, useState, useTransition } from 'react';
+import { useState, useTransition } from 'react';
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
   const [mostrarInicio, editarMostrarInicio] = useState(true);
 
   //Hook de transición
-  const [estaPendiente, iniciarTransicion] = useTransition({ timeoutMs: 500 });
+  const [,iniciarTransicion] = useTransition({ timeoutMs: 100 });
 
   useEffect(() => {
     const username = localStorage.getItem('username');
